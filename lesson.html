@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7df">
+  <meta name="description" content="Watch and listen to a playful animated color lesson.">
+  <title>Watch &amp; Learn — Color Garden</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container site-header">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">🌈</span> Color Garden</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Home</a>
+  </header>
+  <main class="container page-main" id="lesson-page">
+    <div class="page-heading">
+      <div class="eyebrow">🎬 Watch, listen, repeat</div>
+      <h1>A tiny color lesson</h1>
+      <p>Meet a new color in every little scene. Listen, look at the picture, and say the color word out loud!</p>
+    </div>
+    <section class="feature-panel lesson-panel" aria-live="polite">
+      <div class="lesson-visual">
+        <div class="lesson-orbit" aria-hidden="true"></div>
+        <span class="lesson-emoji" id="lesson-emoji" aria-hidden="true">🍎</span>
+        <span class="lesson-color-dot" id="lesson-dot" aria-hidden="true"></span>
+      </div>
+      <div class="lesson-copy">
+        <div class="eyebrow">Color <span id="lesson-index">1 / 6</span></div>
+        <h2 id="lesson-heading">Red!</h2>
+        <p id="lesson-sentence">A red apple. Red, red, red!</p>
+        <span class="lesson-word" id="lesson-word">Say it: RED</span>
+        <div class="lesson-steps" aria-label="Lesson progress">
+          <span class="lesson-step active"></span><span class="lesson-step"></span><span class="lesson-step"></span>
+          <span class="lesson-step"></span><span class="lesson-step"></span><span class="lesson-step"></span>
+        </div>
+        <div class="lesson-controls">
+          <button class="button" id="lesson-play" type="button">▶ Play lesson</button>
+          <button class="button secondary" id="lesson-next" type="button">Next color →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container page-footer">Great listening! <a href="learn.html">Learn the color names next →</a></footer>
+</body>
+</html>

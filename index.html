@@ -1,13 +1,45 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=ziqi.html">
-  <title>Ruang Berdua — Photo Booth</title>
+  <meta name="theme-color" content="#fff7df">
+  <meta name="description" content="Choose a fun activity and learn colors in English.">
+  <title>Color Garden — Learn Colors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Membuka fotobox… Jika halaman tidak terbuka, <a href="ziqi.html">klik di sini</a>.</p>
-  <script>window.location.replace("ziqi.html");</script>
+  <main class="container">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <h1 class="welcome-title" id="welcome-title"><span class="rainbow" aria-hidden="true">🌈</span><span class="pill">Colors</span></h1>
+      <h2>Let's Learn Colors!</h2>
+      <p>Hello, little learners! Are you ready?</p>
+      <a class="button" href="#activities">Start Learning <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="module-grid" id="activities" aria-label="Choose a learning activity">
+      <a class="module-card watch" href="lesson.html">
+        <span class="module-icon" aria-hidden="true">🎬</span>
+        <strong>1. Let's Watch!</strong>
+        <span class="description">Video animasi belajar warna</span>
+      </a>
+      <a class="module-card learn" href="learn.html">
+        <span class="module-icon" aria-hidden="true">🎨</span>
+        <strong>2. Let's Learn!</strong>
+        <span class="description">Mengenal nama-nama warna</span>
+      </a>
+      <a class="module-card play" href="play.html">
+        <span class="module-icon" aria-hidden="true">🎮</span>
+        <strong>3. Let's Play!</strong>
+        <span class="description">Game tebak warna</span>
+      </a>
+      <a class="module-card match" href="matching.html">
+        <span class="module-icon" aria-hidden="true">🧩</span>
+        <strong>4. Color Matching</strong>
+        <span class="description">Mencocokkan warna</span>
+      </a>
+    </section>
+  </main>
+  <footer class="container page-footer">Color Garden · Learn, play, and say it! 🌼</footer>
 </body>
 </html>

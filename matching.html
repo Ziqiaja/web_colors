@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7df">
+  <meta name="description" content="Match color words with pictures in a fun English learning game.">
+  <title>Color Matching — Color Garden</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container site-header">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">🌈</span> Color Garden</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Home</a>
+  </header>
+  <main class="container page-main" id="matching-page">
+    <div class="page-heading">
+      <div class="eyebrow">🧩 Match and remember</div>
+      <h1>Color matching</h1>
+      <p>Choose a color word, then tap the picture that matches it.</p>
+    </div>
+    <section class="feature-panel" aria-label="Color matching game">
+      <p class="matching-instructions">Match all six color words with their pictures. Take your time!</p>
+      <div class="matching-board">
+        <div class="match-column" id="match-colors" role="group" aria-label="Color words"></div>
+        <div class="match-column" id="match-objects" role="group" aria-label="Pictures"></div>
+      </div>
+      <p class="status center" id="matching-feedback" aria-live="polite">First, choose a color word!</p>
+      <div class="action-row">
+        <span class="matching-count" id="matching-count">Matched: 0 / 6</span>
+        <button class="button secondary" id="matching-reset" type="button">Start again ↻</button>
+      </div>
+    </section>
+  </main>
+  <footer class="container page-footer">Great matching! <a href="learn.html">Review the color names →</a></footer>
+</body>
+</html>

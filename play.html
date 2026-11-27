@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7df">
+  <meta name="description" content="Play a color guessing game and take a short color quiz.">
+  <title>Play &amp; Quiz — Color Garden</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container site-header">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">🌈</span> Color Garden</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Home</a>
+  </header>
+  <main class="container page-main" id="play-page">
+    <section aria-labelledby="play-title">
+      <div class="page-heading">
+        <div class="eyebrow">🎮 Let's play</div>
+        <h1 id="play-title">Find the color!</h1>
+        <p>Read the color. Pick the matching picture. You can do it!</p>
+      </div>
+      <div class="game-panel">
+        <div class="game-top"><h2>Color explorer</h2><span class="score-pill" id="game-score">⭐ Stars: 0</span></div>
+        <div class="game-prompt">
+          <p>Can you find something</p>
+          <div class="target-color"><span class="target-dot" id="target-dot"></span><span id="target-name">RED</span>?</div>
+        </div>
+        <div class="game-choices" id="game-choices" aria-label="Choose a picture"></div>
+        <p class="status center" id="game-feedback" aria-live="polite">Tap the picture with the right color!</p>
+        <div class="action-row center">
+          <button class="button secondary" id="game-next" type="button">New color →</button>
+          <a class="button secondary" href="#quiz">Try the color quiz ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-heading">
+        <div><div class="eyebrow">🧠 Show what you know</div><h2 id="quiz-title">Color quiz</h2></div>
+        <p>Five little questions to see what you remember. Good luck!</p>
+      </div>
+      <div class="quiz-panel" id="quiz-panel">
+        <div class="quiz-top"><h2>Ready, color star?</h2><span class="progress-pill">Question 1 of 5</span></div>
+        <p class="quiz-question"></p>
+        <div class="quiz-options"></div>
+        <div class="quiz-bottom"><span class="quiz-feedback" aria-live="polite"></span><button class="button quiz-next" type="button" disabled>Next question →</button></div>
+      </div>
+    </section>
+  </main>
+  <footer class="container page-footer">Nice playing! <a href="matching.html">Try Color Matching next →</a></footer>
+</body>
+</html>

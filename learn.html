@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7df">
+  <meta name="description" content="Learn six color words and discover what happens when paints mix.">
+  <title>Learn Colors — Color Garden</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container site-header">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">🌈</span> Color Garden</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Home</a>
+  </header>
+  <main class="container page-main">
+    <section aria-labelledby="learn-title">
+      <div class="page-heading">
+        <div class="eyebrow">🎨 Look and say</div>
+        <h1 id="learn-title">Meet the colors</h1>
+        <p>Tap a card to hear the color and its name in English. Can you say it, too?</p>
+      </div>
+      <div class="color-grid" id="color-grid" aria-label="Color words"></div>
+    </section>
+
+    <section class="section" id="mix-page" aria-labelledby="mix-title">
+      <div class="section-heading">
+        <div><div class="eyebrow">✨ Discover and create</div><h2 id="mix-title">Color mix lab</h2></div>
+        <p>Pick two paint colors and find out what new color they make!</p>
+      </div>
+      <div class="mix-panel">
+        <div class="mix-stage" aria-live="polite">
+          <div class="mix-blobs" aria-hidden="true">
+            <span class="paint-blob" id="mix-left">?</span><span class="mix-symbol">+</span>
+            <span class="paint-blob" id="mix-right">?</span><span class="mix-symbol">=</span>
+            <span class="paint-blob result" id="mix-result">?</span>
+          </div>
+          <div class="mix-caption" id="mix-caption">Choose two colors to begin!</div>
+        </div>
+        <div class="mix-controls">
+          <div class="eyebrow">Little color experiment</div>
+          <h2>Pick two paint colors</h2>
+          <p>Tap two different colors, then press <strong>Mix colors!</strong></p>
+          <div class="paint-options" id="paint-options"></div>
+          <p class="mix-feedback" id="mix-feedback" aria-live="polite">Red, blue, and yellow are ready to mix.</p>
+          <div class="action-row">
+            <button class="button" id="mix-button" type="button" disabled>Mix colors! ✨</button>
+            <button class="button secondary" id="mix-clear" type="button">Start again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container page-footer">You found the colors! <a href="play.html">Play the color game next →</a></footer>
+</body>
+</html>
